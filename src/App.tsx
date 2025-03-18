@@ -69,7 +69,7 @@ function App() {
   // Generate random processes
   const generateProcesses = (num: number): Process[] => {
     return (
-      Array.from({ length: num }, (_, i) => ({
+      Array.from({ length: num }, (_) => ({
         pid: -1,
         // Burst time between 1-10
         burstTime: Math.floor(Math.random() * 10) + 1,
@@ -110,6 +110,8 @@ function App() {
   const sortedAlgorithms = selectedAlgorithms.sort((a, b) => {
     return algorithmOrder.indexOf(a) - algorithmOrder.indexOf(b);
   });
+
+  sortedAlgorithms;
 
   return (
     <div className="m-3">
