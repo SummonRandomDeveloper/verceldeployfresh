@@ -1,11 +1,11 @@
 import { useState, useRef } from "react";
-import AlgorithmSelection from "./components/AlgorithmSelection";
-import FIFO from "./components/FIFO";
-import SJF from "./components/SJF";
-import STCF from "./components/STCF";
-import RR from "./components/RR";
-import MLFQ from "./components/MFLQ";
-import AverageEndTimeChart from "./components/AverageEndTimeChart";
+import AlgorithmSelection from "./AlgorithmSelection";
+import FIFO from "./FIFO";
+import MLFQ from "./MFLQ";
+import RR from "./RR";
+import SJF from "./SJF";
+import STCF from "./STCF";
+import AverageEndTimeChart from "./AverageEndTimeChart";
 import { jsPDF } from "jspdf";
 import html2canvas from "html2canvas";
 import "./App.css";
